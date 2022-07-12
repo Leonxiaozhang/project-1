@@ -128,6 +128,7 @@ VueRouter.prototype.push = function push (to) {
 		return { y: 0 }
 	}
 })
+// 全局路由守卫
 router.beforeEach(async (to,form,next)=>{
 	 let token = store.state.login.token
 	 let name = store.state.login.userinfo.name
